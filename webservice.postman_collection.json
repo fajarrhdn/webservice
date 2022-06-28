@@ -1,0 +1,54 @@
+{
+	"info": {
+		"_postman_id": "861bbe1e-2872-4259-b30a-1a6ee0cf5700",
+		"name": "webservice",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "21639561"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8000/api/spareparts/",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "nama_sparepart",
+							"value": "plafon baru",
+							"type": "text"
+						},
+						{
+							"key": "minimal_stok",
+							"value": "100",
+							"type": "text"
+						},
+						{
+							"key": "stok",
+							"value": "110",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/spareparts/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"spareparts",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
